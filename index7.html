@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Variables in JavaScript</title>
+  </head>
+  <body>
+    <input type="text" name="text" id="text" placeholder="Enter your name" />
+    <button id="btn">Update</button>
+    <button id="btn2">clear</button>
+    <br />
+    <h1 id="name">Name is:</h1>
+
+    <script type="text/javascript">
+      // Update button
+      document.getElementById("btn").onclick = function () {
+
+
+
+
+
+        // Variables in JavaScript
+        var name = document.getElementById("text").value;
+        document.getElementById("name").innerHTML = "Name is: " + name;
+      };
+
+
+
+
+      // clear button
+      document.getElementById("btn2").onclick = function () {
+        document.getElementById("name").innerHTML = "Pleace Ender Your Name";
+
+        document.getElementById("text").value = "";
+      };
+    </script>
+  </body>
+</html>
