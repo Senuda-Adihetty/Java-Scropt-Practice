@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Style with JavaScript 01</title>
+</head>
+<body>
+<center>
+  <h1 id="heading">Hetty.lk</h1>
+
+  <button id="CC"> change color </button>
+  
+  <button id="CS"> change size </button>
+
+  <button id="HT"> Hide Text  </button>
+
+  <button id="UH"> Un Hide </button>
+
+</center>
+
+ <!-- this is inline js -->
+  <script type="text/javascript">
+
+// color change button
+document.getElementById("CC").onclick = function () {
+  document.getElementById("heading").style.color = "red";
+};
+
+// font size change button
+document.getElementById("CS").onclick = function () {
+  document.getElementById("heading").style.fontSize = "50px";
+};
+
+// hide text button 
+document.getElementById("HT").onclick = function () {
+  document.getElementById("heading").style.display = "none";  
+};
+
+// back button
+document.getElementById("UH").onclick = function () {
+  document.getElementById("heading").style.display = "block";
+
+};
+
+  </script> 
+
+</body>
+</html>
