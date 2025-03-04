@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Response to a Click JavaScript</title>
+  </head>
+  <body>
+    <center>
+      <h1 id="dd">Senuda Adihetty</h1>
+
+      <p>Do want full name</p>
+
+      <button id="button1">click Here</button>
+      <br />
+      <br />
+      <button id="button2">Back</button>
+    </center>
+
+    <!-- this is inline js -->
+    <script type="text/javascript">
+
+      // Response to a Click JavaScript
+      document.getElementById("button1").onclick = function () {
+        document.getElementById("dd").innerHTML =
+          "Senuda Damnidu Karunarathne Adihetty";
+      };
+
+      document.getElementById("button2").onclick = function () {
+        document.getElementById("dd").innerHTML =
+          "Senuda Adihetty";
+      };
+    </script>
+  </body>
+</html>
