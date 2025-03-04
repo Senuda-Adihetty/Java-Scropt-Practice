@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Change web content JavaScript</title>
+  </head>
+  <body>
+    <center>
+      <h1 id="dd">Hello</h1>
+
+      <p id="pp"></p>
+
+      <button id="button1">Login</button>
+      <br />
+      <br />
+      <button id="button2">Logout</button>
+    </center>
+
+    <!-- this is inline js -->
+    <script type="text/javascript">
+
+      // Change web content JavaScript(Login Button)
+      document.getElementById("button1").onclick = function () {
+        document.getElementById("dd").innerHTML =
+          document.getElementById("dd").innerHTML + " Senuda Adihetty";
+
+        document.getElementById("pp").innerHTML = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ea quasi nihil debitis, magnam cumque mollitia vero minus blanditiis saepe fuga non aperiam tenetur sunt facilis quas dolores consectetur voluptates. Autem architecto amet velit nam consequuntur iure neque magni ipsam.";
+      };
+
+
+      // Change web content JavaScript(Logout Button)
+      document.getElementById("button2").onclick = function () {
+        document.getElementById("dd").innerHTML = "Hello";
+        document.getElementById("pp").innerHTML = "";
+      };
+    </script>
+  </body>
+</html>
