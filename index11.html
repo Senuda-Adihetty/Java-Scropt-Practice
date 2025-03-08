@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Create by Senuda Adihetty -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Random number game</title>
+</head>
+
+<body>
+  <h1>Random number game JavaScript</h1>
+  <h3>What is I think Now</h3>
+
+  <input type="text" style="font-size: 30px" placeholder="1-10 Numbers 0nly" id="UserGuess" />
+  <br />
+  <br />
+  <button id="btn">Geuss !</button>
+
+  <script type="text/javascript">
+    document.getElementById("btn").onclick = function (){
+
+      // generate random number
+      var systemGuess = Math.random();
+
+      //  1-10 only (Giving a limit)
+      systemGuess = systemGuess * 11 ;
+
+      //  Rounding to the nearest integer
+      systemGuess = Math.floor(systemGuess);
+
+
+      if (document.getElementById("UserGuess").value == systemGuess) {
+
+        alert("well done You are Corret my dear");
+        document.getElementById("UserGuess").value="";
+
+      } else {
+        alert("INCORRECT, I think no = " + systemGuess);
+        document.getElementById("UserGuess").value="";
+      }
+
+    }
+  </script>
+</body>
+
+</html>
