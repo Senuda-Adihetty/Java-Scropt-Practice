@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>If Statement JavaScript</title>
+  </head>
+  <body>
+    <h1>Enter User Name</h1>
+    <input type="text" id="UN" style="font-size: 30px" />
+    <br />
+    <br /><br />
+    <button id="btn" style="background-color: blue; color: white; padding: 5px">
+      Login
+    </button>
+
+    <script type="text/javascript">
+      document.getElementById("btn").onclick = function () {
+        var enterUN = document.getElementById("UN").value;
+
+        var UN = "senuda";
+
+        if (UN == enterUN) {
+          alert("You are Login");
+          document.getElementById("UN").value = "";
+        } else {
+          alert("Try Again");
+          document.getElementById("UN").value = "";
+        }
+      };
+    </script>
+  </body>
+</html>
